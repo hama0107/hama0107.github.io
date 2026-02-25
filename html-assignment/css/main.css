@@ -3,6 +3,7 @@ body {
     font-size: 18px;
     background-color: rgba(223, 224, 247, 0.9)
 }
+
 header, footer {
     background-color: rgb(244, 167, 180);
     padding: 15px;
@@ -16,7 +17,7 @@ header, footer {
     font-size: 23px;
 }
 #my-image {
-    box-shadow: 0 0 2px 1px rgb(253, 4, 174);
+    box-shadow: 0 0 2px 1px rgb(0, 0, 0);
     margin-top: 10px;
 }
 main ul {
