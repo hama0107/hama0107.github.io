@@ -55,12 +55,15 @@ nav a:hover{
     background-color: rgb(243, 122, 24);
     color: white;
 }
+/* headers and paragraphs */
 h2{
     font-family: 'Times New Roman', Times, serif ;
 }
 p{
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* fill up the form part  */
 form{
     border: 1px solid gray;
     padding: 15px;
@@ -86,6 +89,7 @@ button:hover{
     background-color: rgb(54, 30, 11);
     color: white;
 }
+/* footer and copyrights */
 footer{
       background-color: #f1b090;
 
