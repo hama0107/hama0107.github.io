@@ -1,0 +1,294 @@
+/* =========================
+   CSS RESET (ALWAYS TOP)
+========================= */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: #222;
+    background: #fff;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* BUTTON STYLE (Services + Contact unified) */
+.cta-link,
+.btn-send {
+    display: inline-block;
+    background: #222;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   HEADER (MOBILE FIRST)
+========================= */
+.header {
+    background: #222;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.navbar a {
+    color: #c78c06;
+}
+
+.search-box {
+    margin-top: 1rem;
+    display: flex;
+}
+
+/* =========================
+   HERO (MOBILE)
+========================= */
+.main-banner {
+    position: relative;
+}
+
+.main-banner-img {
+    width: 100%;
+}
+
+.hero-content {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 1rem;
+}
+
+.hero-content h1 {
+    font-size: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 0.9rem;
+}
+
+/* =========================
+   ABOUT (MOBILE)
+========================= */
+.about-section {
+    background: #ffe6ac;
+    padding: 1rem;
+}
+
+/* =========================
+   SERVICES (MOBILE GRID = 1 COLUMN)
+========================= */
+.services-section {
+    padding: 1rem;
+}
+
+.services-grid-top,
+.services-grid-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.service-card {
+    background: #ffe6ac;
+    padding: 1rem;
+}
+
+/* =========================
+   VISION (MOBILE)
+========================= */
+.vision {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.vision-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vision-content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+/* =========================
+   TEAM (MOBILE STACK)
+========================= */
+.team-member {
+    display: flex;
+    flex-direction: column;
+    background: #ffe6ac;
+    margin-bottom: 1rem;
+}
+
+.team-info {
+    padding: 1rem;
+}
+
+.team-info .title {
+    font-weight: 600;
+    border-bottom: 2px solid #c78c06;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* =========================
+   CONTACT (MOBILE STACK)
+========================= */
+.contact-section {
+    padding: 1rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+/* =========================
+   HOURS
+========================= */
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours-table th,
+.hours-table td {
+    border: 1px solid #222;
+    padding: 0.5rem;
+}
+
+.hours-table th {
+    background: #ffe6ac;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer a {
+    color: #c78c06;
+}
+
+/* =========================
+   DESKTOP (760px+)
+========================= */
+@media (min-width: 760px) {
+
+    /* NAV */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar nav ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    /* HERO */
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        max-width: 600px;
+    }
+
+    /* ABOUT */
+    .about-section {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    /* SERVICES GRID */
+    .services-grid-top {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-grid-bottom {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* TEAM */
+    .team-member {
+        flex-direction: row;
+    }
+
+    .team-member.reverse {
+        flex-direction: row-reverse;
+    }
+
+    /* CONTACT */
+    .contact-container {
+        flex-direction: row;
+    }
+
+    /* VISION */
+    .vision {
+        height: 250px;
+    }
+}
